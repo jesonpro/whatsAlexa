@@ -1,3 +1,9 @@
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
+*/
+
 let WhatsAlexa = require('../events');
 let {MessageType,Mimetype} = require('@adiwajshing/baileys');
 let fs = require('fs');
@@ -10,7 +16,7 @@ let Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    WhatsAlexa.addCommand({pattern: 'mp4audio', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    WhatsAlexa.addCommand({pattern: 'mp3', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -36,7 +42,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    WhatsAlexa.addCommand({pattern: 'imagesticker', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    WhatsAlexa.addCommand({pattern: 'photo', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -64,7 +70,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    WhatsAlexa.addCommand({pattern: 'mp4audio', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    WhatsAlexa.addCommand({pattern: 'mp3', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -90,7 +96,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    WhatsAlexa.addCommand({pattern: 'imagesticker', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    WhatsAlexa.addCommand({pattern: 'photo', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
