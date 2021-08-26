@@ -11,8 +11,8 @@ async function Alexa () {
     conn.regenerateQRIntervalMs = 50000;
     
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('WhatsAlexa')}
-${chalk.white.bold('Made By ')}${chalk.red.bold('TOXIC DEVIL')}
+        console.log(`${chalk.green.bold('AmozonAlexa')}
+${chalk.white.bold('Made By ')}${chalk.red.bold('ALEXA PROJECT')}
 
 ${chalk.blue.italic('🔄 Loading QR CODE...')}`);
     });
@@ -29,10 +29,10 @@ ${chalk.blue.italic('🔄 Loading QR CODE...')}`);
         }
 
         console.log(
-            chalk.red.bold('⚠ COPY THIS CODE, It is an IMPORTANT CODE... ⚠'))
+            chalk.red.bold('🚀⚠ COPY THIS CODE, It is an IMPORTANT CODE... ⚠'))
             
         console.log(
-            chalk.blue.bold('Thank You For Using WhatsAlexa 💖'))
+            chalk.blue.bold('Thank You For Using AMOZON Alexa 🛸'))
 
         process.exit(0);
     });
