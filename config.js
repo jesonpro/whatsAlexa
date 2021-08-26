@@ -10,13 +10,13 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsalexa.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'V2 First Release',
+    VERSION: '1.0.0 Global Released',
     SESSION: process.env.SESSION === undefined ? '' : process.env.SESSION,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
     FULLALEXA: process.env.FULL_ALEXA === undefined ? 'false' : process.env.FULL_ALEXA,
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
-    ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/hdb4VFH/IMG-20210516-WA0008.jpg' : process.env.ALIVE_LOGO,
+    ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/2ecd4313a174020006589.jpg' : process.env.ALIVE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
@@ -30,9 +30,9 @@ module.exports = {
     HANDLERS: process.env.HANDLERS === undefined ? '^[.•]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
-    DEVELOPER: 'TEENUX',
-    AUTHOR: 'TEENUX',
-    GIT: 'https://github.com/xneon2/Hashzi-X.git',
+    DEVELOPER: 'AMOZONALEXA',
+    AUTHOR: 'WHATSALEXA',
+    GIT: 'https://github.com/jesonpro/whatsAlexa.git',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
