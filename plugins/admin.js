@@ -1,3 +1,9 @@
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
+*/
+
 let {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
 let WhatsAlexa = require('../events');
 let Config = require('../config');
@@ -180,7 +186,7 @@ WhatsAlexa.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, d
     }
 }));
 
-WhatsAlexa.addCommand({pattern: 'closegc ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+WhatsAlexa.addCommand({pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -194,7 +200,7 @@ WhatsAlexa.addCommand({pattern: 'closegc ?(.*)', fromMe: true, onlyGroup: true, 
     }
 }));
 
-WhatsAlexa.addCommand({pattern: 'opengc ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
+WhatsAlexa.addCommand({pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -208,7 +214,7 @@ WhatsAlexa.addCommand({pattern: 'opengc ?(.*)', fromMe: true, onlyGroup: true, d
     }
 }));
 
-WhatsAlexa.addCommand({pattern: 'linkgc ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+WhatsAlexa.addCommand({pattern: 'invite ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
