@@ -13,13 +13,13 @@
   "keywords": [
     "whatsapp"
   ],
-  "author": "TOXIC-DEVIL",
-  "developer": "TOXIC-DEVIL",
+  "author": "AMOZON ALEXA",
+  "developer": "THARUN03",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/TOXIC-DEVIL/WhatsAlexa/issues"
+    "url": "https://github.com/jesonpro/WhatsAlexa/issues"
   },
-  "homepage": "https://github.com/TOXIC-DEVIL/WhatsAlexa#readme",
+  "homepage": "https://github.com/jesonpro/WhatsAlexa#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
