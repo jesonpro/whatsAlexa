@@ -39,7 +39,7 @@
         "HANDLERS": {
             "description": "Symbol used infront of a command ( Prefix ). NOTE : ONLY SYMBOL CAN BE USED, DON'T ENTER ANY OTHER LATIN WORDS / ALPHABETS, IF IT HAPPENS BOT WILL NOT WORK.",
             "required": true,
-            "value": "^[#]"
+            "value": "^[.]"
         },
         "AUTO_BIO": {
             "description": "Changes your bio automaticly to a Time clock.",
