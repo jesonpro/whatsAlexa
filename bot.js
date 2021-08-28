@@ -271,14 +271,14 @@ ${chalk.blue.italic('🚀AMAZONE ALEXA TEAM')}`);
             chalk.green.bold('🔆 BOT IS NOW ACTIVE IN YOUR ACCOUNT!🔆')
         );
         
-         if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Neotro.png"), MessageType.image, { caption: `🛸`});
+         if (config.LANG == 'SI') {
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Amazone.png"), MessageType.image, { caption: `🛸🚀Hey..!!  ${conn.user.name}! \n*🧞‍♀️සාදරයෙන් Amazone Alexa වෙත පිලිගන්නවා :|🌼*\n\n*🛸Amozon Alexa ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n*💠Amazone Alexa පිළිබද සම්පූර්ණ අවබෝධයක් ලබා ගැනීමට 🔶.basichelp විධානය භාවිතා කරන්න...*\n*🌟Amazone Alexa යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..Alexa වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට 🔶 .newslist විධානය භාවිතා කරන්න..*\n*🚀මෙය ඔබගේ LOG අංකයයි*`});
              
-         } else if (config.LANG == 'SI') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Neotro.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHalo ${conn.user.name}!\n\n*`});
+         } else if (config.LANG == 'EN') {
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Amazone.png"), MessageType.image, { caption: `『 WhatsAlexa 』\n\nHalo ${conn.user.name}!\n\n*`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Neotro.png"), MessageType.image, { caption: `🛸`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/image/Amazone.png"), MessageType.image, { caption: `🛸`});
         }
     });
 
