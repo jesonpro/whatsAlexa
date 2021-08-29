@@ -1,7 +1,7 @@
 {
     "__ALEXAJSON__": true,
-    "LANGUAGE": "Sinhala",
-    "LANGCODE": "si",
+    "LANGUAGE": "English",
+    "LANGCODE": "en",
     "AUTHOR": "TEENUH",
     "STRINGS": {
         "list": {
@@ -95,13 +95,13 @@
             "DELETED": "*✅ The filter was successfully deleted!*"
         },
         "greetings": {
-            "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
+            "WELCOME_DESC": "පිළිගැනීමේ පණිවිඩය සකස් කරයි.",
             "NOT_SET_WELCOME": "*You don't set the welcome message yet.!*\n**To set:** ```.welcome your welcome message```",
             "WELCOME_ALREADY_SETTED": "*✅ Welcome message already set!*\n*Message:* ```",
             "NEED_WELCOME_TEXT": "*You must write a message to set up the welcome message.*\n*Example:* ```.welcome WELCOME!```",
             "WELCOME_DELETED": "*✅ Welcome message has been deleted successfully!*",
             "WELCOME_SETTED": "*✅ Welcome message has been set successfully!*",
-            "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
+            "GOODBYE_DESC": "සමුගැනීමේ පණිවිඩය සකස් කරයි.",
             "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye Your Goodbye Message```",
             "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
             "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye Goodbye!```",
@@ -116,11 +116,11 @@
             "RMLYDIA_DESC": "Makes Lydia disabled for the user.",
             "ALREADY_EMPTY": "```Your user list is already empty!```",
             "NOT_ADDED": "```You haven't added this user already!```",
-            "SIMI_DESC": "Chat with Simi Simi AI Bot.",
+            "SIMI_DESC": "Bot සමඟ කතාබස් කිරීමට...",
             "BOT_DIVIDER": ":",
             "NOT_FOUND_RESPONSE": "```Bot Yet Not Responded! 😖```",
             "INVALID_REQ": "*Invalid Request.*",
-            "INFO_BOT": "Shows the details/informations of the bot."
+            "INFO_BOT": "බොට් පිළිබද විස්තර ලබාදෙයි.."
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
@@ -140,14 +140,14 @@
             "JID_CHAT": "```Chat's JID address: {}```"
         },
         "removebg": {
-            "REMOVEBG_DESC": "Removes the background of the photos.",
+            "REMOVEBG_DESC": "ලබා දෙන ඡායාරූපයේ පසුබිම ඉවත් කරයි.",
             "NEED_PHOTO": "*Give me a photo!*",
             "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
             "RBGING": "```Removing background...```"
         },
         "scrapers": {
-            "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
-            "TRANSLATE_USAGE": ".trt tr it (From Turkish to Italian)",
+            "TRANSLATE_DESC": "google translation. You must reply any message.",
+            "TRANSLATE_USAGE": ".trt si en (From sinhala to english)",
             "NEED_REPLY": "```Please reply to any message!```",
             "LANG": "Language",
             "FROM": "Translated Language",
@@ -156,10 +156,10 @@
             "CURRENCY_ERROR": "```Syntax error! Example: .currency 1 TRY USD```",
             "INVALID_CURRENCY": "```Foreign currency transaction failed. You wrote wrong currency!```",
             "UNKNOWN_ERROR": "```An error occurred. Foreign currency transaction failed!```",
-            "TTS_DESC": "It converts text to sound.",
+            "TTS_DESC": "අකුරු Voice ලෙස පරිවර්තනය කරයි.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
-            "SONG_DESC": "Uploads the song you wrote.",
-            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
+            "SONG_DESC": "ඔබ ලබා දෙන ගීත බාගත කරයි.",
+            "NEED_TEXT_SONG": "*කරුණාකර ගීතයක් ලබාදෙන්න!*\n*Example:* ```.song manike mage hithe - yohani```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "```Downloading your song...```",
             "UPLOADING_SONG": "```Uploading your song...```",
@@ -372,7 +372,7 @@
         "instagram": {
             "NEED_WORD": "*Please enter username of any instagram account.*",
             "USAGE": ".insta <userName>",
-            "DESC": "Instergram විස්තර ලබාදෙයි",
+            "DESC": "Fetches user informations from instagram",
             "LOADING": "Fetching user data.. please wait.",
             "USERNAME": "Username",
             "NAME": "Name",
@@ -385,7 +385,7 @@
             "NOT_FOUND":"User not found: "
         },
         "github": {
-            "GİTHUB_DESC": "Github විස්තර ලබාදෙයි.\n⌨️ Example: .github Tenuh",
+            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github TOXIC-DEVIL",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
