@@ -1,7 +1,7 @@
 {
     "__ALEXAJSON__": true,
-    "LANGUAGE": "English",
-    "LANGCODE": "en",
+    "LANGUAGE": "Sinhala",
+    "LANGCODE": "si",
     "AUTHOR": "TEENUH",
     "STRINGS": {
         "list": {
@@ -372,7 +372,7 @@
         "instagram": {
             "NEED_WORD": "*Please enter username of any instagram account.*",
             "USAGE": ".insta <userName>",
-            "DESC": "Fetches user informations from instagram",
+            "DESC": "Instergram විස්තර ලබාදෙයි",
             "LOADING": "Fetching user data.. please wait.",
             "USERNAME": "Username",
             "NAME": "Name",
@@ -385,7 +385,7 @@
             "NOT_FOUND":"User not found: "
         },
         "github": {
-            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github TOXIC-DEVIL",
+            "GİTHUB_DESC": "Github විස්තර ලබාදෙයි.\n⌨️ Example: .github Tenuh",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
