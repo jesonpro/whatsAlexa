@@ -123,13 +123,13 @@
             "INFO_BOT": "බොට් පිළිබද විස්තර ලබාදෙයි.."
         },
         "profile": {
-            "KICKME_DESC": "It kicks you from the group you are using it in.",
+            "KICKME_DESC": "සමූහයෙන් ඉවත් වෙයි.",
             "KICKME": "```Bye bye! I am going 🤠```",
-            "PP_DESC": "Makes the profile photo what photo you reply.",
+            "PP_DESC": "ලබාදෙන ඡායාරූපය DP සකස් කරයි..",
             "NEED_PHOTO": "*Give me a photo!*",
             "PPING": "```Setting profile photo...```",
-            "BLOCK_DESC": "Block user.",
-            "UNBLOCK_DESC": "Unblock user.",
+            "BLOCK_DESC": "පුද්ගලයකු අවහිර කරයි.",
+            "UNBLOCK_DESC": "පුද්ගලයකු unblock කරයි.",
             "BLOCKED": "blocked",
             "UNBLOCKED": "unblocked",
             "BLOCKED_UPPER": "Blocked!",
@@ -163,63 +163,63 @@
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "```Downloading your song...```",
             "UPLOADING_SONG": "```Uploading your song...```",
-            "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
+            "VIDEO_DESC": "YouTube video බාගත කරයි.",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nShopeBc```",
             "DOWNLOADING_VIDEO": "```Downloading your video...```",
             "UPLOADING_VIDEO": "```Uploading your video...```",
-            "YT_DESC": "It searchs on YouTube.",
+            "YT_DESC": "youtube හි සොයයි.",
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
             "NOT_FOUND": "*I couldn't find anything :(*",
             "SEARCHING": "* 🔎 Searching...*",
-            "WIKI_DESC": "Searches query on Wikipedia.",
-            "IMG_DESC": "Searches for related pics on Google.",
+            "WIKI_DESC": "Wikipedia හි සොයයි.",
+            "IMG_DESC": "ඡායාරූප ලබාදෙයි.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
         },
         "sticker": {
-            "STICKER_DESC": "It converts your replied photo or video to sticker.",
+            "STICKER_DESC": "ලබා දෙන ඡායාරූපය Sticker කරයි",
             "NEED_REPLY": "*Reply to a photo or video!*",
             "DOWNLOADING": "```Media downloading & converting to sticker...```"
         },
         "system_stats": {
-            "ALIVE_DESC": "Does bot work?",
-            "SYSD_DESC": "Shows the system properties."
+            "ALIVE_DESC": "bot ක්‍රියාකරන බව පෙන්වයි",
+            "SYSD_DESC": "system propertie පෙන්වයු."
         },
         "tagall": {
-            "TAGALL_DESC": "Tags everyone in the group.",
-            "TAGADMİN": "Tags group admins.",
+            "TAGALL_DESC": "සමූහයෙ සියලු දෙනා tag කරයි.",
+            "TAGADMİN": "පරිපාකවරුන් tag කරයි.",
             "ADMİN": "*I am not admin in this group!*"
         },
         "updater": {
-            "UPDATER_DESC": "Checks the update.",
+            "UPDATER_DESC": "යතාවත්කාලින කිරීම් පෙන්වයි.",
             "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*🎉 WhatsAlexa a new update available..!\nType *'#update now'* to update the Bot\n\n🆕 Changes After this update:\n\n```",
+            "NEW_UPDATE": "*🧞‍♀️ නව යතාවත්කාලින කිරීම් තිබේ..!\nType *'.update now'* to update the Bot\n\n🆕 Changes After this update:\n\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "🔁 WhatsAlexa Updating...!\n🕓 This may Take a few minutes.",
+            "UPDATING": "🚀Amazone Alexa  Updating...!\n🕓 This may Take a few minutes.",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*✅ Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 WhatsAlexa Restarting Automatically!*"
+            "AFTER_UPDATE": "*💬Restarting Automatically!*"
         },
         "weather": {
-            "WEATHER_DESC": "Shows the weather.",
+            "WEATHER_DESC": "කාලගුණය පෙන්වයි.",
             "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather Bakü```",
             "LOCATION": "Location",
-            "TEMP": "Temperature",
-            "DESC": "Description",
-            "HUMI": "Humidity",
-            "WIND": "Wind Speed",
-            "CLOUD": "Cloud",
+            "TEMP": "🌡Temperature",
+            "DESC": "⛱Description",
+            "HUMI": "💧Humidity",
+            "WIND": "🌬Wind Speed",
+            "CLOUD": "☁Cloud",
             "NOT_FOUND": "```I couldn't find a city with this name. 😖```"
         },
         "web": {
-            "SPEEDTEST_DESC": "Measures Download and Upload speed.",
+            "SPEEDTEST_DESC": "download වේගය මැණීමට.",
             "SPEEDTESTING": "```Running speed test...```",
             "SPEEDTEST_RESULT": "*Speed ​​test completed!*",
             "UPLOAD": "Upload",
             "DOWNLOAD": "Download",
             "PING_DESC": "Measures your ping.",
-            "URL": "Shorten the long link."
+            "URL": "URL කුඩාකරයි."
         },
         "conventer": {
             "MP4TOAUDİO_DESC": "වීඩියෝ Mp3 බවට පරිවර්තනය කරයි..",
@@ -338,28 +338,28 @@
             "CARBON_WARN": "Please only type in en and tr character!"
         },
         "ttp": {
-            "TTP_DESC": "Converts text to plain painting.",
-            "EMOJI_DESC": "Converts Emoji To Image ( Png ).",
+            "TTP_DESC": "අකුරු සරල සිතුවම් ලබාදෙයි",
+            "EMOJI_DESC": "ඉමෝජි ඡායාරූප කරයි ( Png ).",
             "QR_DESC": "It Converts Text To Qr Code",
-            "ATTP_DESC": "Adds rainbow effect to the text as a sticker.",
-            "TEXT_MAKER": "Set of commands to convert text into images.",
+            "ATTP_DESC": "අකුරු දේදුන්නක වර්ණ සහිත ස්ටිකර් ලබාදෙයි.",
+            "TEXT_MAKER": "ලෝගෝ සැදීමෙ විධාන ලැයිස්තුව පෙන්වයි",
             "NEED_WORD": "*You must enter words!*",
             "ANIME_DESC": "It writes the text inside the banner the anime girl is holding",
             "TRUMP_DESC": "Converts the text to Trump's tweet.",
             "CHANGE_DESC": "Turns the text into the change my mind poster."
         },
         "webss": {
-            "SS_DESC": "Takes a screenshot from the page in the given link.",
+            "SS_DESC": "ඔබ ලබාදෙන සැබැඳියේ screen shot ලබාගනී..",
             "LİNK": "You must enter link!"
         },
         "voicy": {
             "NEED_REPLY": "```Please reply to any message!```",
             "ONLY_AUDIO":"```Only audio file is accepted.```",
-            "USAGE": "It converts audio to text.",
+            "USAGE": "voice අකුරු බවට පරිවර්තනය කරයි.",
             "TEXT": "*Hey! I listened secretly to this voice and heard those!:* \n\n"
         },
         "notes": {
-            "NOTES_USAGE": "Shows all your existing notes.",
+            "NOTES_USAGE": "ඔබගේ සුරැකි සටහන් පෙන්වයි .",
             "NO_SAVED": "You don't have any saved notes.",
             "SAVED": "Here is your saved messages: ",
             "SAVE_USAGE": "Reply a message and type .save or just use .save <Your note> without replying",
