@@ -289,7 +289,7 @@ ${chalk.blue.italic('🌟Made By AMAZONE TEAM🌟')}`);
         while (getGMTh == 19 && getGMTm == 1) {
             var announce = ''
             if (infoen !== '' && config.LANG == 'EN') announce = '[ ```🚀 Daily Announcements🎭``` ]\n\n'+infoen+'
-            if (infoml !== '' && config.LANG == 'SI') announce = '[ ```🚀 දවසේ නිවේදන🎭``` ]\n\n'+infoml+'
+            if (infosi !== '' && config.LANG == 'SI') announce = '[ ```🚀 දවසේ නිවේදන🎭``` ]\n\n'+infoml+'
             if (infoid !== '' && config.LANG == 'ID') announce = '[ ```🚀 Pengumuman Harian🎭``` ]\n\n'+infoid+'
 
             if (ann.video.includes('http') || ann.video.includes('https')) {
