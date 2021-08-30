@@ -13,7 +13,7 @@ const config = require('./config');
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./whatsasena/');
+const {Message, StringSession, Image, Video} = require('./alexa/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
@@ -132,7 +132,7 @@ async function Alexa () {
     }, 50000);
     var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
-        biography_var = vars.AUTO_BİO
+        biography_var = vars.AUTO_BIO
     });
     setInterval(async () => { 
         if (biography_var == 'true') {
