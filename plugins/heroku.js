@@ -1,3 +1,9 @@
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
+*/
+
 let WhatsAlexa = require('../events');
 let Config = require('../config');
 let Heroku = require('heroku-client');
@@ -38,7 +44,7 @@ WhatsAlexa.addCommand({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DE
     });
 }));
 
-WhatsAlexa.addCommand({pattern: 'editvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+WhatsAlexa.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data })
 
@@ -55,7 +61,7 @@ WhatsAlexa.addCommand({pattern: 'editvar ?(.*)', fromMe: true, desc: Lang.SETVAR
     }
 }));
 
-WhatsAlexa.addCommand({pattern: 'removevar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+WhatsAlexa.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data })
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
