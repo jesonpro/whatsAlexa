@@ -29,7 +29,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsenaDuplicated', {
+const WhatsAlexaDB = config.DATABASE.define('WhatsAlexa', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -46,7 +46,6 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 const plugindb = require('./plugins/sql/plugin');
 var OWN = { ff: '94766598862,0' }
-// Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -71,7 +70,7 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function whatsAsena () {
+async function Alexa () {
     var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
@@ -261,7 +260,7 @@ async function whatsAsena () {
     var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/f16bbd4ceeb4324d4a727b431a4ef1f2/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAsenaDB.findAll({
+    var StrSes_Db = await WhatsAlexaDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -290,7 +289,7 @@ async function whatsAsena () {
         );
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await WhatsAlexaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -538,7 +537,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
         }
         // ==================== Greetings ====================
         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-            // Görüşürüz Mesajı
+            //🚀
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             var blogo = await axios.get(config.BYE_LOGO, { responseType: 'arraybuffer' })
             if (gb !== false) {
@@ -546,7 +545,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-            // Hoşgeldin Mesajı
+            //🚀
             var gb = await getMessage(msg.key.remoteJid);
             var wlogo = await axios.get(config.WELCOME_LOGO, { responseType: 'arraybuffer' })
             if (gb !== false) {
@@ -940,4 +939,4 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
     }
 }
 
-whatsAsena();
+Alexa();
