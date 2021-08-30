@@ -23,8 +23,8 @@ if (Config.WORKTYPE == 'private') {
             return;
         }
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
-        var downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text})
+        var downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO,MessageType.text})
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -49,8 +49,8 @@ if (Config.WORKTYPE == 'private') {
             return;
         }
  
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.STİCKER_NEEDREPLY, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
-        var downloading = await message.client.sendMessage(message.jid,Lang.STİCKER,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.STİCKER_NEEDREPLY, MessageType.text})
+        var downloading = await message.client.sendMessage(message.jid,Lang.STİCKER,MessageType.text})
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -77,8 +77,8 @@ else if (Config.WORKTYPE == 'public') {
             return;
         }
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
-        var downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text})
+        var downloading = await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO,MessageType.text})
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -103,8 +103,8 @@ else if (Config.WORKTYPE == 'public') {
             return;
         }
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.STİCKER_NEEDREPLY, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
-        var downloading = await message.client.sendMessage(message.jid,Lang.STİCKER,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }})
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.STİCKER_NEEDREPLY, MessageType.text})
+        var downloading = await message.client.sendMessage(message.jid,Lang.STİCKER,MessageType.text})
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
